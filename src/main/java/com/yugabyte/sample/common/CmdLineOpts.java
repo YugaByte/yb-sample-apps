@@ -1,4 +1,4 @@
-// Copyright (c) YugaByte, Inc.
+// Copyright (c) Yugabyte, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
 // in compliance with the License.  You may obtain a copy of the License at
@@ -741,11 +741,11 @@ public class CmdLineOpts {
         "The password to use when connecting to the database. " +
             "If this option is set, the --username option is required.");
     options.addOption("concurrent_clients", true,
-        "The number of client connections to establish to each host in the YugaByte DB cluster.");
+        "The number of client connections to establish to each host in the YugabyteDB cluster.");
     options.addOption("ssl_cert", true,
-      "Use an SSL connection while connecting to YugaByte.");
+      "Use an SSL connection while connecting to Yugabyte.");
     options.addOption("ssl_key", true,
-      "Use an SSL connection while connecting to YugaByte.");
+      "Use an SSL connection while connecting to Yugabyte.");
     options.addOption("batch_size", true,
                       "Number of keys to write in a batch (for apps that support batching).");
     options.addOption(
@@ -951,11 +951,11 @@ public class CmdLineOpts {
 
     footer.append("****************************************************************************\n");
     footer.append("*                                                                          *\n");
-    footer.append("*                     YugaByte DB Sample Apps                              *\n");
+    footer.append("*                     YugabyteDB Sample Apps                               *\n");
     footer.append("*                                                                          *\n");
     footer.append("****************************************************************************\n");
     footer.append("\n");
-    footer.append("Use this sample app to try out a variety of workloads against YugaByte DB.\n");
+    footer.append("Use this sample app to try out a variety of workloads against YugabyteDB.\n");
     footer.append("  Use the --help <app name> option to get more details on how to run it.\n");
     String optsPrefix = "\t\t\t";
     String optsSuffix = " \\\n";
@@ -977,7 +977,7 @@ public class CmdLineOpts {
   private static void printUsageDetails(Options options, String header, String appName) throws Exception {
     StringBuilder footer = new StringBuilder();
 
-    footer.append("Usage and options for workload " + appName + " in YugaByte DB Sample Apps.\n");
+    footer.append("Usage and options for workload " + appName + " in YugabyteDB Sample Apps.\n");
     String optsPrefix = "\t\t\t";
     String optsSuffix = " \\\n";
     int port = getAppPort(appName);
